@@ -4,8 +4,7 @@
 #include "state_machine.h"
 
 // 业务特定事件类型
-typedef enum
-{
+typedef enum {
     BUTTON_PRESSED,
     BUTTON_RELEASED
 } LedSwitcherEvent;

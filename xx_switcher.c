@@ -6,8 +6,7 @@ static void *state_on(void *host, const Event *e);
 
 static void *state_off(void *host, const Event *e)
 {
-    if (*(const LedSwitcherEvent *)e == BUTTON_PRESSED)
-    {
+    if (*(const LedSwitcherEvent *)e == BUTTON_PRESSED) {
         // 业务逻辑：打开LED
         return state_on;
     }
@@ -16,8 +15,7 @@ static void *state_off(void *host, const Event *e)
 
 static void *state_on(void *host, const Event *e)
 {
-    if (*(const LedSwitcherEvent *)e == BUTTON_PRESSED)
-    {
+    if (*(const LedSwitcherEvent *)e == BUTTON_PRESSED) {
         // 业务逻辑：关闭LED
         return state_off;
     }
